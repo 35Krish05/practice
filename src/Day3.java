@@ -8,7 +8,7 @@ public class Day3 {
         System.out.print("Enter your marks : ");
         int marks = sc.nextInt();
       if(marks >= 35 ) {
-          System.out.println("Pass and ");
+          System.out.print("Pass and ");
           if (marks >= 80) {
               System.out.println("GRADE = A");
           } else if (marks >= 60 && marks < 80) {
@@ -43,6 +43,14 @@ public class Day3 {
             case 3 -> System.out.println("Wednesday");
             default -> System.out.println("Invalid day");
         }
+//task - 2 : simple menu driven program using switch (calculator with menu)
+        String grade = switch (marks / 10) {
+            case 10, 9 -> "A";
+            case 8, 7 -> "B";
+            case 6 -> "C";
+            default -> "Fail";
+        };
 
+        System.out.println("Grade: " + grade);
     }
 }
