@@ -1,0 +1,17 @@
+Enter student name (or type 'exit' to stop): Krish
+Roll No: 39
+Enter Marks of 5 subject : 98
+98
+98
+98
+98
+Enter student name (or type 'exit' to stop): exit
+
+===== STUDENT GRADE MANAGEMENT =====
+1. Display All Students
+2. Search Student by Roll No
+3. Find Topper
+4. Find Average Marks
+5. Exit
+Choose option: 5
+Program exited.
