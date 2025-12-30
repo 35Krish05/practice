@@ -46,7 +46,7 @@ public class BankService {
 
     // ---------------- SAVE DATA ----------------
     public void saveData() throws Exception {
-
+        // saving accounts
         try (BufferedWriter bw = new BufferedWriter(new FileWriter("accounts.txt"))) {
             for (Account a : accounts.values()) {
                 bw.write(a.getAccountNumber() + "," +
@@ -56,7 +56,7 @@ public class BankService {
                 bw.newLine();
             }
         }
-
+        // saving customers
         try (BufferedWriter bw = new BufferedWriter(new FileWriter("customers.txt"))) {
             for (Customer c : customers.values()) {
                 bw.write(c.getId() + "," + c.getName());
@@ -66,7 +66,7 @@ public class BankService {
                 bw.newLine();
             }
         }
-
+         // saving transaction
         try (BufferedWriter bw = new BufferedWriter(new FileWriter("transactions.txt"))) {
             for (Account a : accounts.values()) {
                 for (Transaction t : a.getTransactionHistory()) {
