@@ -131,7 +131,7 @@ public class Day12 {
             if (total.get(i) > total.get(topperIndex)) {
                 topperIndex = i;
             }
-            }
+        }
         System.out.println("TOPPER DETAILS");
         System.out.println("Name: " + students.get(topperIndex));
         System.out.println("Roll No: " + roll.get(topperIndex));
@@ -139,7 +139,7 @@ public class Day12 {
         System.out.println("Total: " + total.get(topperIndex));
         System.out.println("Percentage: " + percentage.get(topperIndex) + "%");
         System.out.println("Grade: " + grade.get(topperIndex));
-        }
+    }
 
 
     public static void findAverage(){
